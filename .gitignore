@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.pyc
+data/*.db
+cache/**
+!cache/.gitkeep
+weights/*.pt
+weights/*.joblib
+.env

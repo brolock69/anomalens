@@ -1,0 +1,32 @@
+[
+  {
+    "name": "ZCMC Spine Unit",
+    "specialty_group": "Spine Surgery",
+    "latitude": 6.9033,
+    "longitude": 122.0731,
+    "open_hour": 0,
+    "close_hour": 0,
+    "is_24_7": true,
+    "region": "Zamboanga City"
+  },
+  {
+    "name": "Zamboanga City Medical Center - Orthopedics",
+    "specialty_group": "Spine Rehab",
+    "latitude": 6.9124,
+    "longitude": 122.0793,
+    "open_hour": 8,
+    "close_hour": 17,
+    "is_24_7": false,
+    "region": "Zamboanga City"
+  },
+  {
+    "name": "Sample PT & Orthotics Clinic",
+    "specialty_group": "PT & Orthotics",
+    "latitude": 6.9095,
+    "longitude": 122.0745,
+    "open_hour": 9,
+    "close_hour": 18,
+    "is_24_7": false,
+    "region": "Zamboanga City"
+  }
+]
