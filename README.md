@@ -74,32 +74,4 @@ SQLite by default (`data/anomalens.db`), via SQLAlchemy — swap
 `database_url` in `app/config.py` for Postgres/MySQL in production without
 touching any router code.
 
-## Project layout
-
-```
-app/
-  main.py              FastAPI app + router registration
-  config.py            All tunable settings
-  database.py          SQLAlchemy engine/session
-  models/
-    db_models.py        ORM: User, ScreeningRecord (patient_history)
-    schema.py            Pydantic request/response contracts
-  routers/
-    screening.py         capture-gate + analyze
-    history.py            users + history/trend
-    clinics.py             nearby (GPS) + search (text)
-  vision/
-    obstruction_filter.py  Stage 2: classical CV clothing/hair filter
-    pose_estimation.py     Stage 3: YOLOv8-pose wrapper (+ mock fallback)
-    angle_calculator.py     Pure geometry: vertex-angle Cobb-equivalent math
-    classifier.py            Stage 4: rule-based condition tagging
-    heatmap.py                Grad-CAM hook (stub) + overlay rendering
-  services/
-    clinic_service.py        Haversine distance + open-hours logic
-    report_service.py         Plain-language clinical summary strings
-  utils/
-    geo.py, image_utils.py
-data/
-  clinics.json            Sample clinic directory (edit/replace with real data)
-weights/                  Drop your trained .pt/.joblib files here
-```
+this is made for research
